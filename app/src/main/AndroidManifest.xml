@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zifung.gymclub">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".user.UserInfo"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".model.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".model.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".model.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".model.SignupActivity"
+            android:label="@string/title_activity_signup" />
+        <activity
+            android:name=".CourseActivity"
+            android:label="@string/title_activity_course"></activity>
+    </application>
+
+</manifest>

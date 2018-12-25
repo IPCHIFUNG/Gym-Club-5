@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/sign_in_bg"
+    android:gravity="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="#00ffffff"
+        android:onClick="return_btn_clicked"
+        android:text="@string/key_return"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/et_signup_username"
+            android:theme="@style/MyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_username"
+            android:textColorHint="#ddd"
+            android:textColor="#fff"
+            android:paddingBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:theme="@style/MyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nickname"
+            android:textColorHint="#ddd"
+            android:textColor="#fff"
+            android:paddingBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/et_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingBottom="20dp"
+            android:textColor="#fff"
+            android:textColorHint="#ddd"
+            android:theme="@style/MyEditText" />
+
+        <EditText
+            android:id="@+id/et_password_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_repeat_password"
+            android:inputType="textPassword"
+            android:paddingBottom="20dp"
+            android:textColor="#fff"
+            android:textColorHint="#ddd"
+            android:theme="@style/MyEditText" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#e03198f2"
+            android:onClick="signup_btn_clicked"
+            android:layout_marginTop="20dp"
+            android:text="注册"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_signup_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册即代表阅读并同意服务条款"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
